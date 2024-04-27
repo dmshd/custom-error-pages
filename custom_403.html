@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Access Forbidden</title>
+    <style>
+      ::selection {
+        background-color: yellow;
+        color: blue;
+      }
+      @keyframes flickerAnimation {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.95;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      body {
+        font-family: "Courier New", monospace;
+        background-color: blue;
+        color: white;
+        font-size: 13px;
+        animation: flickerAnimation 0.3s infinite;
+      }
+      h1 {
+        font-size: 18px;
+      }
+      a {
+        text-decoration: none;
+        color: yellow;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      ul {
+        padding-left: 15px;
+        list-style-type: disclosure-open;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        <span style="display: block; margin-bottom: 3px; font-size: 24px">🚫</span>
+        Access Forbidden
+      </h1>
+      <p>
+        You do not have permission to access this page.
+      </p>
+    </header>
+    <main>
+      <p>Please try the following:</p>
+      <ul>
+        <li>
+          If you typed the page address in the Address bar, make sure that it is
+          spelled correctly.
+        </li>
+        <li>
+          Go to our <a href="/">home page</a>, and look for links to the
+          information you want.
+        </li>
+        <li>
+          Click the <a href="javascript:history.back()">Back</a> button to try
+          another link.
+        </li>
+      </ul>
+      <audio id="background-audio" controls autoplay>
+        <source src="error.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+    </main>
+  </body>
+</html>
